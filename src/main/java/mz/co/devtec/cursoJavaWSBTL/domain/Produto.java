@@ -1,4 +1,4 @@
-package mz.co.devtec.cursoJavaWSBTL.dataTables.domain;
+package mz.co.devtec.cursoJavaWSBTL.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

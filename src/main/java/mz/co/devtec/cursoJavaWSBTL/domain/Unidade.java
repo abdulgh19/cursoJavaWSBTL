@@ -1,4 +1,4 @@
-package mz.co.devtec.cursoJavaWSBTL.dataTables.domain;
+package mz.co.devtec.cursoJavaWSBTL.domain;
 
 import java.util.List;
 
@@ -9,20 +9,21 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+
+
 @SuppressWarnings("serial")
 @Entity
-@Table(name = "grupo")
-public class Grupo extends AbstractEntity {
-
+@Table(name = "unidade")
+public class Unidade extends AbstractEntity {
 
 	@Column(name = "designacao", unique = true, nullable = false)
 	private String designacao;
 	
-	@ManyToOne (optional = false)
-	@JoinColumn(name = "id_categoria", unique = false, nullable = false)
-	private Categoria categoria;	
+	@ManyToOne
+	@JoinColumn(name = "id_tipo", unique = false, nullable = false)
+	private Tipo tipo;
 	
-	@OneToMany(mappedBy = "grupo")
+	@OneToMany(mappedBy = "unidade")
 	private List<Produto> produtos;
 
 	public String getDesignacao() {
@@ -33,12 +34,12 @@ public class Grupo extends AbstractEntity {
 		this.designacao = designacao;
 	}
 
-	public Categoria getCategoria() {
-		return categoria;
+	public Tipo getTipo() {
+		return tipo;
 	}
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
 	}
 
 	public List<Produto> getProdutos() {
@@ -48,12 +49,8 @@ public class Grupo extends AbstractEntity {
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
-	
-	
-
 
 	
-	
-	
 
+	
 }
