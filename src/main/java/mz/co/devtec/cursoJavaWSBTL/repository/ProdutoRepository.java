@@ -9,4 +9,6 @@ import mz.co.devtec.cursoJavaWSBTL.domain.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 	
+	
+	
 }

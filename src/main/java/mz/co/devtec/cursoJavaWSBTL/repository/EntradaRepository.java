@@ -11,5 +11,4 @@ public interface EntradaRepository extends JpaRepository<Entrada, Long> {
 	
 	
 
-
 }

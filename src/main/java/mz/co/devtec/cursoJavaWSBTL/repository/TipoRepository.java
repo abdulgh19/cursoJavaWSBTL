@@ -7,6 +7,8 @@ import mz.co.devtec.cursoJavaWSBTL.domain.Tipo;
 
 @Repository
 public interface TipoRepository extends JpaRepository<Tipo, Long> {
+	
+	
 
 
 }

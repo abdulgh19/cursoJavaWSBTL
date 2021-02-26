@@ -8,6 +8,7 @@ import mz.co.devtec.cursoJavaWSBTL.domain.Grupo;
 
 @Repository
 public interface GrupoRepository extends JpaRepository<Grupo, Long> {
-
+	
+	
 	
 }

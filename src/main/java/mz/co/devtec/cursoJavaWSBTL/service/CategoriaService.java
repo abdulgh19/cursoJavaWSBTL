@@ -12,12 +12,14 @@ import mz.co.devtec.cursoJavaWSBTL.repository.CategoriaRepository;
 @Service
 public class CategoriaService {
 	
+	
+		
 	@Autowired
 	private CategoriaRepository repository;
 	
 	@Transactional(readOnly = false)
 	public void registarCategoria(Categoria categoria) {
-		repository.save(categoria);		
+		repository.save(categoria);
 	}
 	
 	@Transactional(readOnly = false)

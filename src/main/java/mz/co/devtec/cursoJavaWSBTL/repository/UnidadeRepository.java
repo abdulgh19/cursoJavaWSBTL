@@ -9,5 +9,7 @@ import mz.co.devtec.cursoJavaWSBTL.domain.Unidade;
 @Repository
 public interface UnidadeRepository extends JpaRepository<Unidade, Long> {
 	
+
+	
 }
 
